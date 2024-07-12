@@ -15,7 +15,7 @@ public class Homework {
             System.out.println("Это високосный год");
     } else
     {
-        System.out.println("Этот год не високосный");
+        System.out.println("Год не високосный");
     }
 }
 
