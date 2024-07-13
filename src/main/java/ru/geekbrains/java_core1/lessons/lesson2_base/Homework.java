@@ -1,17 +1,34 @@
 package ru.geekbrains.java_core1.lessons.lesson2_base;
 
+import java.util.Scanner;
+
 public class Homework {
     //Домашка ко 2-му уроку
     public static void main(String[] args) {
-        checkSummSize(5, 10);
-        checkPositiveOrNegative(-5);
-        isPositiveOrNegative(2);
-        printWordNTimes("Урра!!!", 4);
-        isLeapYear(1100);
+//        checkSummSize(5, 10);
+//        checkPositiveOrNegative(-5);
+//        isPositiveOrNegative(2);
+//        printWordNTimes("Урра!!!", 4);
+//        isLeapYear(1100);
+        isLeapYear2();
+    }
+
+    public static void isLeapYear2() {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите год --> ");
+//проверяю, точно ли ввели число, а не другую хрень:
+        if (scan.hasNextInt()) {
+            int year = scan.nextInt();
+//если инт, делаю алгоритм проверки
+            isLeapYear(year);
+        } else {
+            System.out.println("Извините, но это явно не год. Перезапустите программу и попробуйте снова!");
+        }
+        scan.close();
     }
 
     public static void isLeapYear(int year) {
-        if (year % 400 == 0 && year % 4 == 0 && year % 100 != 0) {
+        if (year % 400 == 0 || year % 4 == 0 && year % 100 != 0) {
             System.out.println("Это високосный год");
     } else
     {
