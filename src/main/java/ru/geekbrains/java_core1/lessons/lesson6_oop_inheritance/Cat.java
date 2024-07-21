@@ -1,14 +1,14 @@
 package ru.geekbrains.java_core1.lessons.lesson6_oop_inheritance;
 
 public class Cat extends Animal {
-    String name;
-    int maxGap = 200;
+    private int maxGap = 200;
 
     public Cat(String name) {
         this.name = name;
     }
 
-    public void catRun(int gap) {
+    @Override
+    public void run(int gap) {
         if(gap <= maxGap) {
             System.out.printf("Cat %s ran %d m\n", name, gap);
         } else {
@@ -16,7 +16,8 @@ public class Cat extends Animal {
         }
     }
 
-    public void catSwim(int range) {
+    @Override
+    public void swim(int range) {
         System.out.printf("Cats cannot swim\n");
     }
 }
