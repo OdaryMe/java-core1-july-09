@@ -11,11 +11,11 @@ public class Animal {
     }
 
 
-    public void animalRun(int gap) {
+    public void run(int gap) {
         System.out.printf("Animal ran %d m\n", gap);
     }
 
-    public void animalSwim(int range) {
+    public void swim(int range) {
         System.out.printf("Animal swam %d m\n", range);
     }
 }

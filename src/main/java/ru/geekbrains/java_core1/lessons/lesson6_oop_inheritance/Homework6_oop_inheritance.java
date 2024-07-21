@@ -17,18 +17,8 @@ public class Homework6_oop_inheritance {
                 };
 
         for (int i = 0; i < animals.length; i++) {
-            if(animals[i] instanceof Cat) {
-                ((Cat) animals[i]).catRun(100);
-                ((Cat) animals[i]).catSwim(10);
-            } else {
-                ((Dog) animals[i]).dogRun(100);
-                ((Dog) animals[i]).dogSwim(10);
-            }
+            animals[i].run(100);
+            animals[i].swim(10);
         } System.out.printf("В нашем зоопарке %d животных\n", animals.length);
-
-//       cat1.catRun(10);
-//       dog1.dogRun(580);
-//       cat1.catSwim(50);
-//       dog1.dogSwim(10);
     }
 }
