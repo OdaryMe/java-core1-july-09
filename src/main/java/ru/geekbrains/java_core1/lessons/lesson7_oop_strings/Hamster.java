@@ -11,7 +11,6 @@ public class Hamster {
     }
 
     public boolean eat(Bowl bowl) {
-        satiety = false;
         if(appetite <= bowl.getFoodAmount()) {
             bowl.decreaseFood(appetite);
             System.out.printf("Hamster %s has eaten for %d food.\n", name, appetite);

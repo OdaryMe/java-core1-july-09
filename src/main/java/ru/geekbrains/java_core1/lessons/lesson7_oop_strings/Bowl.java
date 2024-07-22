@@ -2,7 +2,7 @@ package ru.geekbrains.java_core1.lessons.lesson7_oop_strings;
 
 public class Bowl {
     private int foodAmount;
-    private int foodMax = 600;
+    private int foodMax = 700;
     private int foodNull = 0;
 
     public void putFood(int amount) {

@@ -15,7 +15,7 @@ package ru.geekbrains.java_core1.lessons.lesson7_oop_strings;
 public class Homework7_oop {
     public static void main(String[] args) {
          Hamster[] hamsters = {
-           new Hamster("Denny", 100),
+           new Hamster("Teddy", 110),
            new Hamster("Lucky", 120),
            new Hamster("Fatty", 200),
          };
